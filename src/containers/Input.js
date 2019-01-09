@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import simpleInput from "../components/input";
+import simpleCheckInput from "../components/input";
 import { handleCheck } from "../actions/index";
 
 const mapStateToProps = store => {
@@ -23,4 +23,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(simpleInput);
+)(simpleCheckInput);

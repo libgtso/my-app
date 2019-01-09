@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default class simpleCheckInput extends React.Component {
   render() {
@@ -15,3 +16,8 @@ export default class simpleCheckInput extends React.Component {
     );
   }
 }
+
+simpleInput.propTypes = {
+  checked: PropTypes.bool.isRequired,
+  handleCheckAction: PropTypes.func.isRequired
+};

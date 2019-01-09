@@ -1,8 +1,9 @@
+import { TOGGLE } from "../actions/actionTypes";
 const defaultState = { checked: false };
 
 const reducer = (state = defaultState, action) => {
   switch (action.type) {
-    case "TOGGLE":
+    case TOGGLE:
       return { ...state, checked: action.payload };
     default:
       return state;

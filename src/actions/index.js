@@ -1,6 +1,8 @@
+import { TOGGLE } from "./actionTypes";
+
 export function handleCheck(checked) {
   return {
-    type: "TOGGLE",
+    type: TOGGLE,
     payload: !checked
   };
 }
